@@ -12,21 +12,21 @@
     <!-- bean definitions here -->
     <bean id="alien2" class="com.telusco.Alien">
         <property name="age" value="21" />
-        <property name="lap" ref="laptop" />
+        <property name="comp" ref="desktop" />
     </bean>
 
-    <bean id="alien3" class="com.telusco.Alien">
+    <bean id="alien3" class="com.telusco.Alien" autowire="byName">
         <constructor-arg name="age" value="25" />
-        <constructor-arg name="lap" ref="laptop" />
+        <constructor-arg name="comp" ref="comp" />
     </bean>
 
-    <bean id="laptop" class="com.telusco.Laptop" />
+    <bean id="comp" class="com.telusco.Laptop" />
     <bean id="desktop" class="com.telusco.Desktop" />
-    <bean id="eng" class="com.telusco.Engineer">
+    <bean id="eng" class="com.telusco.Engineer" autowire="byName">
         <!--<constructor-arg name="name" value="Manojit" />
         <constructor-arg name="comp" ref="desktop"/>-->
         <property name="name" value="Manojit Nandi" />
-        <property name="comp" ref="desktop" />
+        <!--<property name="comp" ref="desktop" />-->
     </bean>
 
 
