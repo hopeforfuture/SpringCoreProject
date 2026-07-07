@@ -15,7 +15,7 @@
         <property name="comp" ref="desktop" />
     </bean>
 
-    <bean id="alien3" class="com.telusco.Alien" autowire="byName">
+    <bean id="alien3" class="com.telusco.Alien">
         <constructor-arg name="age" value="25" />
         <constructor-arg name="comp" ref="comp" />
     </bean>
