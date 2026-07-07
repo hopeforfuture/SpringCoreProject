@@ -5,6 +5,10 @@ public class Alien {
     private int age;
     private Laptop lap;
 
+    public Alien() {
+        System.out.println("Alien Object Created");
+    }
+
     public Alien(int age, Laptop lap) {
         System.out.println("constructor calling for alien obj3");
         this.age = age;
@@ -27,9 +31,6 @@ public class Alien {
         this.lap = lap;
     }
 
-    public Alien() {
-        System.out.println("Alien Object Created");
-    }
 
     public void code() {
         System.out.println("Coding...");

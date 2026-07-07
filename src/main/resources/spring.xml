@@ -20,9 +20,17 @@
         <constructor-arg name="lap" ref="laptop" />
     </bean>
 
-    <bean id="laptop" class="com.telusco.Laptop">
-
+    <bean id="laptop" class="com.telusco.Laptop" />
+    <bean id="desktop" class="com.telusco.Desktop" />
+    <bean id="eng" class="com.telusco.Engineer">
+        <!--<constructor-arg name="name" value="Manojit" />
+        <constructor-arg name="comp" ref="desktop"/>-->
+        <property name="name" value="Manojit Nandi" />
+        <property name="comp" ref="desktop" />
     </bean>
+
+
+
 
 </beans>
 
