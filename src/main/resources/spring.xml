@@ -15,6 +15,11 @@
         <property name="lap" ref="laptop" />
     </bean>
 
+    <bean id="alien3" class="com.telusco.Alien">
+        <constructor-arg name="age" value="25" />
+        <constructor-arg name="lap" ref="laptop" />
+    </bean>
+
     <bean id="laptop" class="com.telusco.Laptop">
 
     </bean>

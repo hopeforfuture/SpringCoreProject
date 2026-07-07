@@ -5,6 +5,12 @@ public class Alien {
     private int age;
     private Laptop lap;
 
+    public Alien(int age, Laptop lap) {
+        System.out.println("constructor calling for alien obj3");
+        this.age = age;
+        this.lap = lap;
+    }
+
     public int getAge() {
         return age;
     }
@@ -26,7 +32,7 @@ public class Alien {
     }
 
     public void code() {
+        System.out.println("Coding...");
         lap.compile();
-        System.out.println("Code...");
     }
 }
