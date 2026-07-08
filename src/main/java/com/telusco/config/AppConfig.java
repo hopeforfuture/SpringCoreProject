@@ -5,15 +5,13 @@ import com.telusco.Computer;
 import com.telusco.Desktop;
 import com.telusco.Laptop;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Primary;
-import org.springframework.context.annotation.Scope;
+import org.springframework.context.annotation.*;
 
 @Configuration
+@ComponentScan("com.telusco")
 public class AppConfig {
 
-    @Bean
+    /*@Bean
     public Alien alien(Computer comp) { //@Qualifier("laptop")
         Alien obj = new Alien();
         obj.setAge(25);
@@ -31,5 +29,7 @@ public class AppConfig {
     @Primary
     public Laptop laptop() {
         return new Laptop();
-    }
+    }*/
+
+
 }

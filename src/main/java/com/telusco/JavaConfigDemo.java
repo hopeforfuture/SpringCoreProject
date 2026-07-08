@@ -9,10 +9,11 @@ public class JavaConfigDemo {
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 
         Alien obj1 = context.getBean(Alien.class);
+        obj1.setAge(38);
         System.out.println(obj1.getAge());
         obj1.code();
-        System.out.println("---------------------------------");
-        Desktop dt = context.getBean("desktop", Desktop.class);
+        System.out.println("---------------------------------------");
+        Desktop dt = context.getBean( Desktop.class);
         dt.compile();
 
         //Desktop dt1 = context.getBean("desktop", Desktop.class);

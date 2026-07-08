@@ -1,8 +1,15 @@
 package com.telusco;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component("alien")
 public class Alien {
 
     private int age;
+    @Autowired
+    @Qualifier("desktop")
     private Computer comp;
 
     public Alien() {
