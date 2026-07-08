@@ -8,5 +8,7 @@ public class AutowireDemo {
         ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
         Engineer eng = (Engineer) context.getBean(Engineer.class);
         eng.deliver();
+        Desktop desk = (Desktop) context.getBean("desktop") ;
+        desk.compile();
     }
 }

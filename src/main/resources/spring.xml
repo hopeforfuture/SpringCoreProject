@@ -12,7 +12,7 @@
     <!-- bean definitions here -->
     <bean id="alien2" class="com.telusco.Alien">
         <property name="age" value="21" />
-        <property name="comp" ref="desktop" />
+        <property name="comp" ref="comp" />
     </bean>
 
     <bean id="alien3" class="com.telusco.Alien">
@@ -21,7 +21,7 @@
     </bean>
 
     <bean id="comp" class="com.telusco.Laptop" />
-    <bean id="desktop" class="com.telusco.Desktop" />
+    <bean id="desktop" class="com.telusco.Desktop"  lazy-init="true"/>
     <bean id="eng" class="com.telusco.Engineer" autowire="byName">
         <!--<constructor-arg name="name" value="Manojit" />
         <constructor-arg name="comp" ref="desktop"/>-->
